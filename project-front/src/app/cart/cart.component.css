@@ -1,0 +1,56 @@
+.cart-item{
+    color: black;
+    size: 120px;
+    font-weight: 100px;
+    border: black;
+    border-style: solid;
+    width: 50%;
+    padding: 35px;
+    margin: 5px;
+    
+}
+.knopka{
+    margin-left: 1000px;
+    margin-top: 20px;
+    background-color: #4caf50;
+    height: 50px;
+    width: 150px;
+    border: 0;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #fff;
+    letter-spacing: .5px;
+    display: inline-block;
+    cursor: pointer;
+  }
+  
+  .label{
+    margin-top: 40px;
+    color: rgb(5, 0, 0);
+    font-size: 12px;
+    text-decoration: none;
+    font-family: sans-serif;
+    line-height: 1;
+    display: inline;
+  }
+  
+  #data{
+    font-size: 12px;
+    font-family: sans-serif;
+    color: #050101;
+    font-weight: 100px;
+    
+  }
+  
+  .p{
+    font-family: Arial;
+    font-size: 16px;
+  }
+  
+  .a{
+    font-family: Arial;
+    min-height: 30px;
+    margin-bottom: -8px;
+    margin-left: -8px;
+  }
+  

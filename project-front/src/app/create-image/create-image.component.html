@@ -1,0 +1,27 @@
+
+<div class="create">
+  <form>
+    <div class="title">New Image in Gallery!</div>
+    <div class="item">
+      <div class="label">Title</div>
+      <input type="text" name="name" [(ngModel)]="ngModel.name">
+    </div>
+    <div class="item">
+      <div class="label">Image URL</div>
+      <input type="text" name="image" [(ngModel)]="ngModel.images">
+    </div>
+    <div class="item">
+      <div class="label">Description</div>
+      <input type="text" name="description" [(ngModel)]="ngModel.description">
+    </div>
+    <div class="item">
+      <div class="label">Category</div>
+      <input type="number" name="category_id" [(ngModel)]="ngModel.category_id">
+    </div>
+    <div class="item">
+      <div class="label">Price</div>
+      <input type="number" name="price" [(ngModel)]="ngModel.price">
+    </div>
+    <button (click)="onCreate()">Add to Gallery!</button>
+  </form>
+</div>

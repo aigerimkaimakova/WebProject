@@ -1,0 +1,11 @@
+<p>admin works!</p>
+<div class="admin" style="text-align:center" *ngIf="currentUser">
+  <h1>
+    Welcome Super Admin!
+  </h1>
+  <p>
+    <button  (click)="logout()">
+      Logout
+    </button>
+  </p>
+</div>

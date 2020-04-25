@@ -1,0 +1,44 @@
+<h3 style="font-size: 45px;text-align: center;"> Client Cart</h3>
+
+<p>
+  <a routerLink="/shipping" style="color:black; padding-bottom: 50px;"><b>Shipping Prices</b></a>
+</p>
+
+<div class="cart-item" *ngFor="let item of items">
+  <span><b>{{ item.name }} </b></span>
+  <span style="margin-left: 400px;"><b>{{ item.price | currency }}</b></span>
+</div>
+
+<div class="add">
+    <form id="log_form" method="post" [formGroup]="checkoutForm">
+      <label for = "data" class='a'>Enter your name and surname
+  
+      </label>
+      <input formControlName="name" class="label" type="text" name="data" id="data" placeholder="Keanu Reaves"> <br>
+  
+      <label for = "data" class='a'>Enter your e-mail
+  
+      </label>
+      <input class="label" type="text" name="data" id="data" placeholder="example@gmail.com"> <br>
+  
+      <label for = "data" class='a'>Enter your phone number
+  
+      </label>
+      <input formControlName="phone" class="label" type="text" name="data" id="data" placeholder="+7-***-***-**-**"> <br>
+  
+      <label for = "data" class='a'>Comments to Order
+  
+      </label>
+      <input class="label" type="text" name="data" id="data" placeholder="Comments"> <br>
+  
+      <label for = "data" class='a'>Enter Your Card Number
+  
+      </label>
+      <input class="label" type="text" name="data" id="data" placeholder="**** **** **** ****"> <br>
+  
+      <p class="p">Нажимая на кнопку "Order" Вы даете согласие на обработку указанных персональных данных в соответствии
+         с законом РК и подтверждаете, что ознакомлены с политикой конфиденциальности</p>
+  
+        <button (click)="order()" class="knopka">Order</button>
+    </form>
+  </div>

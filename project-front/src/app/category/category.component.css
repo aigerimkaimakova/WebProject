@@ -1,0 +1,26 @@
+.product-item {
+  text-align: center;
+  color:black;
+  border: 2px solid black;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+.mainDiv{
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  flex-direction: row;
+  justify-content: space-evenly;
+
+}
+.image{
+  margin: 50px 60px;
+  width: 300px;
+  height: 200px;
+}
+h3.a.title{
+  color: #120a2e;
+}
+

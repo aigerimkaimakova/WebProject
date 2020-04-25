@@ -1,0 +1,40 @@
+header {
+  background: #7700FF;
+  height: 80px;
+  display: grid;
+}
+.logo {
+  font-weight: bold;
+  display: grid;
+  align-items: center;
+}
+.back{
+  background-image: url("https://artsale.ua/image/data/Interiernie/IN17_040.jpg");
+}
+nav {
+  display: grid;
+  align-items: center;
+}
+ul {
+  list-style-type: none;
+  margin: 0 ;
+  padding: 0;
+  display: grid;
+  align-items: center;
+  grid-template-columns: repeat(6, auto);
+  grid-gap: 1rem;
+}
+li {
+  float: left;
+
+}
+a {
+  padding: 0.4em;
+  text-transform: uppercase;
+  font-size: .8em;
+}
+
+/*:hover {*/
+/*   background: #8E2BFF;*/
+/* }*/
+

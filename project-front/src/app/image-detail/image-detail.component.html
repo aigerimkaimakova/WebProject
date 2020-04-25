@@ -1,0 +1,39 @@
+<!-- <div class="row">
+  <div class="wrapper" id="detail">
+    <h3>
+      {{ image.name }}
+    </h3>
+    <p class="text">
+      {{ image.description }}
+    </p>
+    <img id="main" src={{image.images}}>
+    <h4> {{ image.price }} $ <span style="color:black;">
+             </span>
+    </h4>
+    <p *ngIf="image.rating" class="item_rating">
+      <i class="material-icons">Rating</i>
+      {{ image.rating }} / 10
+    </p>
+    <button class="button" (click)="addToCart(image)">Buy</button>
+
+  </div> -->
+<!-- </div> -->
+<button (click)="goBack()" class="knopka">Go back</button>
+<div class="clearfix float-my-children">
+  <img id="main" src={{image.images}} >
+  <div style="text-align: center;size: 250px;"> <b>{{ image.name }}</b></div>
+</div>
+
+<div class="clearfix float-my-children">
+
+
+<p> {{ image.description }}</p>   </div>
+<h4>Price {{ image.price }} $ <span style="color:black;">
+</span>
+</h4>
+<!-- <p *ngIf="image.rating" class="item_rating"> -->
+<!-- <i class="material-icons">Rating</i> -->
+<!-- {{ image.rating }} / 10 -->
+<!-- </p> -->
+<button class="button" (click)="addToCart(image)">Buy</button>
+<button class="button" (click)="deleteImg()">Delete</button>

@@ -1,0 +1,38 @@
+.image-item  {
+  text-align: center;
+  color:black;
+  border: 2px solid black;
+  border-radius: 3px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+.h3{
+  color: black;
+}
+.name{
+  color: #120a2e;
+}
+.a{
+  color: #120a2e;
+}
+.images {
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.zoom {
+  transition:transform .2s;
+  width: 300px;
+  height: 100px;
+}
+.zoom:hover {
+  transform: scale(1.5);
+}
+.maxScale{
+  outline: none;
+  overflow: hidden;
+}
+

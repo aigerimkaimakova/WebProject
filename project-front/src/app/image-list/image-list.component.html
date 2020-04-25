@@ -1,0 +1,15 @@
+<h2 style="text-align:center; margin: 40px 0px;">Images</h2>
+<div class="images">
+  <div class="image-item maxScale"  *ngFor="let image of images">
+
+    <h3>
+      <a routerLink="/category/{{image.category_id}}/image-id/{{image.id}}" [state]="{ image:image }" [title]="image.name + ' details'" >
+        {{ image.name }}
+      </a>
+    </h3>
+    <img class="zoom" src={{image.images}}>
+    <br>
+    <h4> {{ image.price }} $ <span style="color:rgb(0, 162, 255);float:right;font-size: 10px;">  </span></h4>
+
+  </div>
+</div>
