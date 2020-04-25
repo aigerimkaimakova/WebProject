@@ -2,6 +2,7 @@ from django.db import models
 
 
 class Category(models.Model):
+    id=models.CharField(max_length=300);
     name = models.CharField(max_length=300)
 
     def to_json(self):
@@ -25,4 +26,13 @@ class Image(models.Model):
             'price': self.price,
             'description': self.description,
             'images': self.images
+        }
+
+class User(models.Model):
+    name = models.CharField(max_length=300)
+
+    def to_json(self):
+        return {
+            'id': self.id,
+            'name': self.name,
         }
