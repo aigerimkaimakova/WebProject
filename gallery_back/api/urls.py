@@ -9,5 +9,5 @@ urlpatterns = [
     path('images/create/', views.create),
     path('cart/', views.order),
     path('login/', obtain_jwt_token),
-    
+    #path('login/', obtain_jwt_token)
 ]
